@@ -1,0 +1,25 @@
+Digital Product E-Commerce System
+
+Database Schema (possible)
+- users
+   - id (pk), firstname, middlename (optional), lastname, email, password, role, createdat
+
+- product
+    - id (pk), title, description, price, acategory, file_path (download link), thubnail, createdat
+
+- orders
+    - id, user_id (FK), total_amount, payment_status, createdat
+
+- orders_items
+    - id (PK), order_id (FK), product_id(FK), price
+
+- transactions
+    - id (PK), order_id(FK), user_id(FK), transactions_type (Purchase, Refund, Cancel), amount, status, createdat
+
+- audit_trail
+    - id (PK), user_id(FK), action (string), target_table (string), target_id (int), timestamp
+
+
+Admin - Full control: manage users, products, reports
+Staff - can process transactions, vieww reports
+Client - can register, order, download product
