@@ -1,23 +1,23 @@
 Digital Product E-Commerce System
 
 Database Schema (possible)
-- users
-   - id (pk), firstname, middlename (optional), lastname, email, password, role, createdat
+-- users table
+id (PK), firstname, middlename (nullable), lastname, email, password, role, status, last_login, created_at
 
-- product
-    - id (pk), title, description, price, acategory, file_path (download link), thubnail, createdat
+-- product table
+id (PK), title, description, price, acategory, file_path, thumbnail, is_active, download_limit, created_at
 
-- orders
-    - id, user_id (FK), total_amount, payment_status, createdat
+-- orders table
+id (PK), user_id (FK), total_amount, payment_status, payment_method, created_at
 
-- orders_items
-    - id (PK), order_id (FK), product_id(FK), price
+-- order_items table
+id (PK), order_id (FK), product_id (FK), price
 
-- transactions
-    - id (PK), order_id(FK), user_id(FK), transactions_type (Purchase, Refund, Cancel), amount, status, createdat
+-- transactions table
+id (PK), order_id (FK), user_id (FK), transaction_type (Purchase, Refund, Cancel), amount, status, reference_number, remarks, created_at
 
-- audit_trail
-    - id (PK), user_id(FK), action (string), target_table (string), target_id (int), timestamp
+-- audit_trail table
+id (PK), user_id (FK), action, target_table, target_id, timestamp
 
 
 Admin - Full control: manage users, products, reports
