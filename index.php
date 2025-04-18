@@ -9,7 +9,7 @@ echo "Database connection successful!";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduwerks - E-Learning Platform</title>
+    <title>Digital Product E-Commerce System</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
@@ -19,15 +19,15 @@ echo "Database connection successful!";
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center">
                 <div class="text-3xl font-bold text-blue-600">
-                    <span class="text-orange-500">Edu</span>werks
+                    <span class="text-orange-500">Gig</span>lwe
                 </div>
             </div>
             <div class="hidden lg:flex space-x-8">
-                <a href="#" class="font-medium text-gray-700 hover:text-blue-600">Home</a>
-                <a href="#" class="font-medium text-gray-700 hover:text-blue-600">About</a>
-                <a href="#" class="font-medium text-gray-700 hover:text-blue-600">Courses</a>
-                <a href="#" class="font-medium text-gray-700 hover:text-blue-600">Teachers</a>
-                <a href="#" class="font-medium text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="#home" class="font-medium text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="font-medium text-gray-700 hover:text-blue-600">About</a>
+                <a href="#products" class="font-medium text-gray-700 hover:text-blue-600">Products</a>
+                <a href="#pricing" class="font-medium text-gray-700 hover:text-blue-600">Pricing</a>
+                <a href="#contact" class="font-medium text-gray-700 hover:text-blue-600">Contact</a>
             </div>
             <div class="flex items-center space-x-4">
                 <button class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Login</button>
@@ -46,14 +46,14 @@ echo "Database connection successful!";
         <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center">
             <div class="lg:w-1/2 mb-10 lg:mb-0">
                 <h1 class="text-4xl lg:text-5xl font-bold mb-6">
-                    Discover a New Way to <span class="text-blue-600">Learn</span> Online
+                    Unlock Your Digital Product<span class="text-blue-600">Ecommerce System</span> Today!
                 </h1>
                 <p class="text-lg text-gray-600 mb-8">
-                    Eduwerks is a modern learning platform that helps students master new skills through interactive courses and expert guidance.
+                    giglwe is a perfect solutio for businesses and individuals looking to take their online presense to the next level. 
                 </p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition">Get Started</button>
-                    <button class="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition">Explore Courses</button>
+                    <button class="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition">Explore Products</button>
                 </div>
             </div>
             <div class="lg:w-1/2">
@@ -68,15 +68,15 @@ echo "Database connection successful!";
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="bg-blue-50 p-6 rounded-xl text-center">
                     <div class="text-blue-600 text-4xl font-bold mb-2">10k+</div>
-                    <div class="text-gray-700">Active Students</div>
+                    <div class="text-gray-700">Products</div>
                 </div>
                 <div class="bg-orange-50 p-6 rounded-xl text-center">
                     <div class="text-orange-500 text-4xl font-bold mb-2">200+</div>
-                    <div class="text-gray-700">Expert Instructors</div>
+                    <div class="text-gray-700">Web Designer</div>
                 </div>
                 <div class="bg-purple-50 p-6 rounded-xl text-center">
                     <div class="text-purple-600 text-4xl font-bold mb-2">500+</div>
-                    <div class="text-gray-700">Online Courses</div>
+                    <div class="text-gray-700">Free Products</div>
                 </div>
                 <div class="bg-green-50 p-6 rounded-xl text-center">
                     <div class="text-green-600 text-4xl font-bold mb-2">95%</div>
@@ -86,103 +86,91 @@ echo "Database connection successful!";
         </div>
     </section>
 
-    <!-- Popular Courses -->
+    <!-- Popular Digital Products -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">Popular Courses</h2>
+                <h2 class="text-3xl font-bold mb-4">Top-Selling Digital Products</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">
-                    Explore our most in-demand courses designed to help you develop new skills and achieve your goals.
+                    Discover high-quality templates, developer tools, and digital assets crafted to accelerate your workflow and elevate your projects.
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Course 1 -->
+                <!-- Product 1 -->
                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
                     <div class="relative">
-                        <img src="/api/placeholder/400/200" alt="Web Development" class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Web Dev</div>
+                        <img src="/api/placeholder/400/200" alt="UI Kits" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">UI Kit</div>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center mb-4">
-                            <img src="/api/placeholder/40/40" alt="Instructor" class="w-10 h-10 rounded-full">
+                            <img src="/api/placeholder/40/40" alt="Creator" class="w-10 h-10 rounded-full">
                             <div class="ml-3">
                                 <p class="text-sm text-gray-600">Jane Cooper</p>
                                 <div class="flex text-yellow-400 text-sm">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                                     <span class="text-gray-600 ml-1">4.5</span>
                                 </div>
                             </div>
                         </div>
-                        <h3 class="font-bold text-xl mb-2">Complete Web Development Bootcamp</h3>
-                        <p class="text-gray-600 mb-4">Learn HTML, CSS, JavaScript, React and Node.js to become a full-stack developer.</p>
+                        <h3 class="font-bold text-xl mb-2">Sleek UI Kit for Designers</h3>
+                        <p class="text-gray-600 mb-4">A modern, fully customizable design system to speed up your Figma projects and bring consistency to your interfaces.</p>
                         <div class="flex justify-between items-center">
-                            <span class="text-blue-600 font-bold text-lg">$89.99</span>
-                            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">Enroll Now</button>
+                            <span class="text-blue-600 font-bold text-lg">$29.00</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">Buy Now</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Course 2 -->
+                <!-- Product 2 -->
                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
                     <div class="relative">
-                        <img src="/api/placeholder/400/200" alt="Data Science" class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm">Data Science</div>
+                        <img src="/api/placeholder/400/200" alt="Code Snippets" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm">Code</div>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center mb-4">
-                            <img src="/api/placeholder/40/40" alt="Instructor" class="w-10 h-10 rounded-full">
+                            <img src="/api/placeholder/40/40" alt="Creator" class="w-10 h-10 rounded-full">
                             <div class="ml-3">
                                 <p class="text-sm text-gray-600">Robert Fox</p>
                                 <div class="flex text-yellow-400 text-sm">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                                     <span class="text-gray-600 ml-1">5.0</span>
                                 </div>
                             </div>
                         </div>
-                        <h3 class="font-bold text-xl mb-2">Data Science and Machine Learning</h3>
-                        <p class="text-gray-600 mb-4">Master data analysis, visualization and machine learning algorithms.</p>
+                        <h3 class="font-bold text-xl mb-2">PHP Shopping Cart Module</h3>
+                        <p class="text-gray-600 mb-4">A plug-and-play shopping cart solution for PHP — perfect for fast and secure e-commerce integration.</p>
                         <div class="flex justify-between items-center">
-                            <span class="text-blue-600 font-bold text-lg">$94.99</span>
-                            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">Enroll Now</button>
+                            <span class="text-blue-600 font-bold text-lg">$49.00</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">Buy Now</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Course 3 -->
+                <!-- Product 3 -->
                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
                     <div class="relative">
-                        <img src="/api/placeholder/400/200" alt="Digital Marketing" class="w-full h-48 object-cover">
-                        <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm">Marketing</div>
+                        <img src="/api/placeholder/400/200" alt="Marketing Templates" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm">Template</div>
                     </div>
                     <div class="p-6">
                         <div class="flex items-center mb-4">
-                            <img src="/api/placeholder/40/40" alt="Instructor" class="w-10 h-10 rounded-full">
+                            <img src="/api/placeholder/40/40" alt="Creator" class="w-10 h-10 rounded-full">
                             <div class="ml-3">
                                 <p class="text-sm text-gray-600">Leslie Alexander</p>
                                 <div class="flex text-yellow-400 text-sm">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                                     <span class="text-gray-600 ml-1">4.0</span>
                                 </div>
                             </div>
                         </div>
-                        <h3 class="font-bold text-xl mb-2">Digital Marketing Masterclass</h3>
-                        <p class="text-gray-600 mb-4">Learn SEO, social media marketing, email campaigns and growth strategies.</p>
+                        <h3 class="font-bold text-xl mb-2">Pro Email Template Bundle</h3>
+                        <p class="text-gray-600 mb-4">A pack of fully responsive and professionally designed email templates, perfect for marketing campaigns and promotions.</p>
                         <div class="flex justify-between items-center">
-                            <span class="text-blue-600 font-bold text-lg">$79.99</span>
-                            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">Enroll Now</button>
+                            <span class="text-blue-600 font-bold text-lg">$19.00</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -190,17 +178,19 @@ echo "Database connection successful!";
             
             <div class="text-center mt-10">
                 <button class="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition">
-                    View All Courses <i class="fas fa-arrow-right ml-2"></i>
+                    Browse All Products <i class="fas fa-arrow-right ml-2"></i>
                 </button>
             </div>
         </div>
     </section>
 
+
+
     <!-- Features Section -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">Why Choose Eduwerks?</h2>
+                <h2 class="text-3xl font-bold mb-4">Why Choose Giglwe?</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">
                     We provide a comprehensive learning experience with features designed to help you succeed.
                 </p>
@@ -246,9 +236,9 @@ echo "Database connection successful!";
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">What Our Students Say</h2>
+                <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">
-                    Hear from our students about how Eduwerks has helped them achieve their learning goals.
+                    Trusted by creators, developers, and business owners who use our digital products to save time and deliver results.
                 </p>
             </div>
             
@@ -262,13 +252,13 @@ echo "Database connection successful!";
                         <i class="fas fa-star"></i>
                     </div>
                     <p class="text-gray-600 mb-6">
-                        "The web development course was exactly what I needed to transition into a tech career. The hands-on projects were challenging but rewarding."
+                        "The UI kits saved me countless hours on my latest client project. Clean design, easy to customize — I couldn’t be happier!"
                     </p>
                     <div class="flex items-center">
-                        <img src="/api/placeholder/48/48" alt="Student" class="w-12 h-12 rounded-full">
+                        <img src="/api/placeholder/48/48" alt="Customer" class="w-12 h-12 rounded-full">
                         <div class="ml-4">
-                            <h4 class="font-bold">Michael Johnson</h4>
-                            <p class="text-sm text-gray-600">Web Developer</p>
+                            <h4 class="font-bold">Alex Garcia</h4>
+                            <p class="text-sm text-gray-600">Freelance Designer</p>
                         </div>
                     </div>
                 </div>
@@ -282,13 +272,13 @@ echo "Database connection successful!";
                         <i class="fas fa-star"></i>
                     </div>
                     <p class="text-gray-600 mb-6">
-                        "I've tried several online platforms, but Eduwerks offers the best balance of theory and practice. The instructors are incredibly knowledgeable."
+                        "The PHP code snippets integrated smoothly into my project. Reliable, secure, and well-documented — highly recommend!"
                     </p>
                     <div class="flex items-center">
-                        <img src="/api/placeholder/48/48" alt="Student" class="w-12 h-12 rounded-full">
+                        <img src="/api/placeholder/48/48" alt="Customer" class="w-12 h-12 rounded-full">
                         <div class="ml-4">
-                            <h4 class="font-bold">Sarah Williams</h4>
-                            <p class="text-sm text-gray-600">Data Analyst</p>
+                            <h4 class="font-bold">Emily Tran</h4>
+                            <p class="text-sm text-gray-600">Full-Stack Developer</p>
                         </div>
                     </div>
                 </div>
@@ -302,13 +292,13 @@ echo "Database connection successful!";
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <p class="text-gray-600 mb-6">
-                        "The digital marketing course helped me double my client base within 3 months. The strategies I learned were practical and effective."
+                        "I purchased the email template bundle for a campaign and saw a noticeable boost in engagement. Professional and easy to edit!"
                     </p>
                     <div class="flex items-center">
-                        <img src="/api/placeholder/48/48" alt="Student" class="w-12 h-12 rounded-full">
+                        <img src="/api/placeholder/48/48" alt="Customer" class="w-12 h-12 rounded-full">
                         <div class="ml-4">
-                            <h4 class="font-bold">David Chen</h4>
-                            <p class="text-sm text-gray-600">Marketing Consultant</p>
+                            <h4 class="font-bold">Liam Scott</h4>
+                            <p class="text-sm text-gray-600">Digital Marketer</p>
                         </div>
                     </div>
                 </div>
@@ -316,23 +306,25 @@ echo "Database connection successful!";
         </div>
     </section>
 
+
     <!-- CTA Section -->
     <section class="py-16 bg-blue-600 text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4">Ready to Start Your Learning Journey?</h2>
+            <h2 class="text-3xl font-bold mb-4">Power Up Your Projects with Premium Digital Assets</h2>
             <p class="max-w-2xl mx-auto mb-8">
-                Join thousands of students who are already improving their skills and advancing their careers with Eduwerks.
+                Join creators and developers who trust us for high-quality templates, code snippets, and tools that save time and boost results.
             </p>
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
                 <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
-                    Get Started
+                    Shop Now
                 </button>
                 <button class="border border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition">
-                    View Courses
+                    Browse Products
                 </button>
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
