@@ -23,3 +23,117 @@ id (PK), user_id (FK), action, target_table, target_id, timestamp
 Admin - Full control: manage users, products, reports
 Staff - can process transactions, vieww reports
 Client - can register, order, download product
+
+
+
+File Structure
+/digital-ecommerce
+├── /assets
+│   ├── /css
+│   ├── /js
+│   └── /images
+│
+├── /downloads               # secured folder for digital product files
+│
+├── /includes
+│   ├── config.php
+│   ├── connect.php
+│   └── functions.php
+│
+├── /templates
+│   ├── header.php
+│   ├── footer.php
+│   └── sidebar.php
+│
+├── /client                  # 💡 this is your client-facing folder!
+│   ├── dashboard.php        # user's profile & purchased products
+│   ├── orders.php           # list of their orders
+│   ├── order-details.php    # view specific order
+│   ├── download.php         # file download logic
+│   └── account-settings.php # change email, password, etc.
+│
+├── /pages                   # public pages (even for unregistered users)
+│   ├── index.php
+│   ├── products.php
+│   ├── product-detail.php
+│   └── checkout.php
+│
+├── /admin                   # admin-only backend
+│   ├── dashboard.php
+│   ├── manage-users.php
+│   ├── manage-products.php
+│   ├── manage-orders.php
+│   └── reports.php
+│
+├── /staff                   # staff-only backend
+│   ├── dashboard.php
+│   └── process-transactions.php
+│
+├── /auth                    # login, register, logout
+│   ├── login.php
+│   ├── register.php
+│   └── logout.php
+│
+├── /controllers
+│   ├── UserController.php
+│   ├── ProductController.php
+│   ├── OrderController.php
+│   └── TransactionController.php
+│
+├── /models
+│   ├── User.php
+│   ├── Product.php
+│   ├── Order.php
+│   └── Transaction.php
+│
+├── .htaccess                # secure routing & download protection
+├── index.php                # entry point
+└── README.md
+
+
+🏠 Public Pages — Customer Side
+
+File	Purpose
+/index.php	Homepage (featured products, categories)
+/products.php	Product listing (grid / filters / search)
+/product_detail.php	Single product preview page
+/cart.php	Shopping cart page
+/checkout.php	Checkout form (billing, payment method selection)
+/order_success.php	Thank you / order confirmation page
+/downloads.php	List of purchased products with download links (secured later with PHP)
+👤 User Authentication Pages
+
+File	Purpose
+/auth/login.php	Login form
+/auth/register.php	Registration form
+/auth/forgot_password.php	Forgot password form
+/auth/reset_password.php	Password reset page
+💼 Admin Panel Pages
+
+File	Purpose
+/admin/index.php	Admin dashboard (overview)
+/admin/users.php	User management list
+/admin/user_add.php	Add user form
+/admin/products.php	Product list / manage
+/admin/product_add.php	Add product form (title, description, upload file, image, price)
+/admin/orders.php	View orders and statuses
+/admin/transactions.php	View payment logs
+/admin/reports.php	Basic reporting (sales, downloads)
+🗂️ Shared Layout
+
+File	Purpose
+/includes/header.php	Common HTML <head> + navigation
+/includes/footer.php	Site footer & scripts
+/assets/css/style.css	Your sitewide CSS styles
+/assets/js/main.js	Your sitewide JavaScript code
+🖼️ Recommended Design Flow:
+Design index.php first (product grid preview).
+
+Then product_detail.php (single product layout with Download / Buy Now button).
+
+Then cart.php & checkout.php.
+
+Once the customer side looks good, start the admin area.
+
+Connect to the database when frontend is locked.
+
