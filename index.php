@@ -12,44 +12,56 @@ echo "Database connection successful!";
     <title>Digital Product E-Commerce System</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366F1'
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(14, 8, 109, 0.37)'
+                    },
+                    backdropBlur: {
+                        sm: '4px'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="font-sans text-gray-800">
-    <!-- Navigation -->
-    <nav class="bg-white py-4 px-6 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center">
-                <div class="text-3xl font-bold text-blue-600">
-                    <span class="text-orange-500">Gig</span>lwe
-                </div>
-            </div>
-            <div class="hidden lg:flex space-x-8">
-                <a href="#home" class="font-medium text-gray-700 hover:text-blue-600">Home</a>
-                <a href="#about" class="font-medium text-gray-700 hover:text-blue-600">About</a>
-                <a href="#products" class="font-medium text-gray-700 hover:text-blue-600">Products</a>
-                <a href="#pricing" class="font-medium text-gray-700 hover:text-blue-600">Pricing</a>
-                <a href="#contact" class="font-medium text-gray-700 hover:text-blue-600">Contact</a>
-            </div>
-            <div class="flex items-center space-x-4">
-                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Login</button>
-                <button class="bg-orange-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-orange-600 transition">Sign Up</button>
-            </div>
-            <div class="lg:hidden">
-                <button class="text-gray-700">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 flex justify-between items-center p-6 mx-4 backdrop-blur-sm bg-gray-900/30 rounded-2xl shadow-glass relative">
+        <div class="text-2xl font-bold text-white">Giglwe</div>
+        <div class="space-x-8 hidden md:flex">
+            <a href="#home" class="hover:text-indigo-400 transition duration-300 ease-in-out">Home</a>
+            <a href="#about" class="hover:text-indigo-400 transition duration-300 ease-in-out">About</a>
+            <a href="#products" class="hover:text-indigo-400 transition duration-300 ease-in-out">Products</a>
+            <a href="#pricing" class="hover:text-indigo-400 transition duration-300 ease-in-out">Pricing</a>
+            <a href="#contact" class="hover:text-indigo-400 transition duration-300 ease-in-out">Contact</a>
+        </div>
+        <button class="bg-primary hover:bg-indigo-600 transition px-5 py-2 rounded-full text-white font-semibold shadow-lg">Get Started</button>
+
+        <div class="lg:hidden">
+            <button class="text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </div>
     </nav>
+
+    
 
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-blue-50 to-purple-50 py-12 lg:py-20">
         <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center">
             <div class="lg:w-1/2 mb-10 lg:mb-0">
                 <h1 class="text-4xl lg:text-5xl font-bold mb-6">
-                    Unlock Your Digital Product<span class="text-blue-600">Ecommerce System</span> Today!
+                    Power Up Your Projects with <span class="text-blue-600">Premium</span> Digital Assets Today!
                 </h1>
                 <p class="text-lg text-gray-600 mb-8">
-                    giglwe is a perfect solutio for businesses and individuals looking to take their online presense to the next level. 
+                    Join creators and developers who trust us for high-quality templates, code snippets, and tools that save time and boost results.                
                 </p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition">Get Started</button>
