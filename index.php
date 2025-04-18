@@ -344,7 +344,7 @@ echo "Database connection successful!";
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <div>
                     <div class="text-2xl font-bold mb-4">
-                        <span class="text-orange-500">Edu</span>werks
+                        <span class="text-orange-500">Gig</span>lwe
                     </div>
                     <p class="text-gray-400 mb-4">
                         Transforming lives through accessible and quality education.
@@ -392,22 +392,22 @@ echo "Database connection successful!";
                     <ul class="space-y-2">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt mt-1 mr-2 text-gray-400"></i>
-                            <span class="text-gray-400">123 Education St, Knowledge City</span>
+                            <span class="text-gray-400">Lagan st. Brgy. Tanglaw, PPC</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-phone mr-2 text-gray-400"></i>
-                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                            <span class="text-gray-400">09385259375</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-envelope mr-2 text-gray-400"></i>
-                            <span class="text-gray-400">info@eduwerks.com</span>
+                            <span class="text-gray-400">Giglwe@outlook.com</span>
                         </li>
                     </ul>
                 </div>
             </div>
             
             <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Eduwerks. All rights reserved.</p>
+                <p>&copy; 2025 Giglwe. All rights reserved.</p>
             </div>
         </div>
     </footer>
